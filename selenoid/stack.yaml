@@ -13,7 +13,7 @@ Parameters:
   InstanceType:
     Description: Instance type
     Type: String
-    Default: t3.nano
+    Default: t3.xlarge
     AllowedValues: # Feel free to add other types
       - t3.nano
       - t3.micro
@@ -23,6 +23,11 @@ Parameters:
       - t3.large
       - t3.xlarge
       - t3.2xlarge
+      - m4.large
+      - m4.xlarge
+      - m4.2xlarge
+      - m4.4xlarge
+      - m4.10xlarge
   KeyPairName:
     Description: Provides the name of the Amazon EC2 key pair for SSH access.
     Type: AWS::EC2::KeyPair::KeyName
